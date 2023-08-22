@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+:root{
+    --primary-color-one: #c07d53;
+    --primary-color-two: #f1cbb1;
+    --primary-color-three: #fff6f1;
+    --primary-color-four: #fffbf6;
+    --secondary-color: #144e5a;
+    --tertiary-color: #ffbd5e;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color-four);
+    padding: 20px 5%;
+}
+header .links ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+header .logo h1{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    color: var(--secondary-color);
+}
+header .logo h1 span{
+    color: var(--primary-color-one);
+    font-family: 'Abril Fatface', cursive;
+}
+header .links ul li a{
+    text-decoration: none;
+    color: var(--primary-color-one);
+    font-weight: 700;
+}
+header .button button{
+    padding: 10px 50px;
+    border: none;
+    background-color: var(--primary-color-one);
+    color: var(--primary-color-four);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+footer{
+    margin-top: 20px;
+}
+footer .links{
+    background-color: var(--primary-color-four);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: solid 1px var(--primary-color-one);
+}
+footer .links .logo h1{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    color: var(--secondary-color);
+}
+footer .links .logo h1 span{
+    color: var(--primary-color-one);
+    font-family: 'Abril Fatface', cursive;
+}
+footer .links .link ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+footer .links .link ul li a{
+    text-decoration: none;
+    color: var(--primary-color-one);
+    font-weight: 700;
+}
+footer .copy{
+    background-color: var(--primary-color-four);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+footer .copy .copyright h3{
+    color: var(--primary-color-one);
+}
+footer .copy .socials{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+footer .copy .socials .content{
+    display: flex;
+    gap: 1rem;
+}
+footer .copy .socials .content p{
+    font-size: 15px;
+    color: var(--primary-color-one);
+    font-weight: 600;
+}
+footer .copy .socials .content p:nth-child(2){
+    padding-left: 1rem;
+    border-left: dashed 2px var(--primary-color-one);
+}
+footer .copy .socials .icons{
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+#landing img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#landing{
+    position: relative;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+#landing .cards{
+    position: absolute;
+    padding: 0 5%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#landing .cards .card{
+    padding: 5%;
+    backdrop-filter: blur(35px);
+    border-radius: 20px;
+    width: 50%;
+}
+#landing .cards .card h1{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+#landing .cards .card h1 span{
+    font-weight: 900;
+    color: var(--tertiary-color);
+}
+#landing .cards .card p{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--primary-color-three);
+}
+#landing .cards .card button{
+    padding: 15px 60px;
+    margin-top: 20px;
+    background-color: var(--primary-color-one);
+    border: none;
+    border-radius: 5px;
+    color: var(--primary-color-four);
+    font-size: 15px;
+    font-weight: 500;
+}
+#landing .cards .icons{
+    display: grid;
+    gap: 1rem;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+#sponsers{
+    background-color: var(--primary-color-three);
+}
+#sponsers .our{
+    text-decoration: underline;
+    color: #144e5a;
+    font-size: 40px;
+    font-weight:700;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 40px;
+}
+#sponsers .spon{
+    display: flex;
+    gap: 2rem;
+    font-size: 30px;
+    color:gray;
+    padding-left: 100px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#about{
+    padding-left: 50px;
+    width: 32%;
+}
+#about .onus .us{
+    color: #144e5a;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-top: 70px;
+}
+#about .onus .more{
+    font-size: smaller;
+    padding-top: 20px;
+}
+#about .onus.more p span{
+    color: var(--tertiary-color);
+    }
+
+.photo1{
+    width: 100%;
+    padding-top: 20px;
+}
+.photo1 img{
+    width: 100%;    
+    padding-left: 90px;
+    border-radius: 20px;
+}
+.photo1 img:nth-child(2){
+    position: absolute;
+    width: 20%;
+    right: 650px;
+    border-radius: 20px;
+    
+}
+#choose{
+    padding-top: 20px;
+    text-align: center;
+}
+#choose .choosing p:nth-child(1){
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+#boxes{
+    padding-left: 50px;
+}
+#boxes .box1{
+    background-color: var(--primary-color-four);  
+    width: 20%;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+h3{
+    font-weight: 400px;
+}
+.texts{
+    padding-top: 20px;
+}
+.texts p{
+    padding-top: 20px;
+}
