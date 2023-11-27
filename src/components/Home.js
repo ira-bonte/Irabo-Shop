@@ -1,5 +1,5 @@
 import React from "react";
-import {FaDiscord, FaFacebook, FaInstagram, FaMicrosoft, FaSlack, FaSnapchat, FaStar, FaTelegram, FaTicketAlt, FaTwitter} from "react-icons/fa";
+import {FaDiscord, FaFacebook, FaInstagram, FaMicrosoft, FaPeopleArrows, FaRProject, FaRainbow, FaSlack, FaSnapchat, FaStar, FaTelegram, FaTicketAlt, FaTwitter, FaViber} from "react-icons/fa";
 
 function Home(){
     return  <main>
@@ -20,54 +20,28 @@ function Home(){
                 </section>
                 <section id="sponsers">
                     <div className="every"> 
-                       <div className="our">
-                           Our sponser 
+                       <div className="title">
+                            <h1>Our sponser</h1>
                        </div>
-                       <div className="spon">
-                        <FaDiscord/> Discord
-                        <FaTelegram/>Telegram
-                        <FaSnapchat/>Snapchat
-                        <FaMicrosoft/>Microsoft
-                        <FaSlack/> Slack 
+                       <div className="card">
+                        <FaDiscord/> 
+                        <FaTelegram/>
+                        <FaSnapchat/>
+                        <FaMicrosoft/>
+                        <FaSlack/>  
                        </div>
                     </div>
                 </section>
                 <section id="about">
-                 <div className="aboutphoto">
-                    <div className="onus">
-                      <div className="us">
-                         About us
-                      </div>
-                    <div className="more">
-                            <p>Irabo started in 2023 and was found by something I don't know. We give and deliver to you furniture you bought on our website and things like that <span>read more...</span></p>   
+                    <div className="content">
+                        <div className="title">
+                            <h1>about us</h1>
+                       </div>
+                       <p>this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte <a href="home.js">read more...</a></p>
                     </div>
-                  </div>
-                  {/* <div className="photo1">
-                    <img src={require('../images/aboutus.jpg')} alt="about us"></img>
-                    <img src={require('../images/onus.jpg')} alt="on us"></img> */}
-                  {/* </div> */}
-                 </div>
-                </section>
-                <section id="choose">
-                    <div className="choosing">
-                       <p> Why choose us?</p>
-                       <p>Vous etes assurer de nous choisir parce-que nous avons de bonne produits pour vous donner et vous ne sera pas decu.</p>
-                    </div>
-                </section>
-                <section id="boxes">
-                <div className="box1">
-                        <FaStar/>
-                        <div className="texts">
-                        <h5>Quality</h5>
-                        <p>The Quality of our products and nibind nkiby nyn ntbg bir hasii 2 nyn birarenz nkuk mubibon byonyn ni ibya mberee wllh!</p>
-                      </div>
-                    </div>
-                    <div className="box2">
-                        <FaTicketAlt/>
-                        <div className="text">
-                        <h5>Quality</h5>
-                        <p>The Quality of our products and nibind nkiby nyn ntbg bir hasii 2 nyn birarenz nkuk mubibon byonyn ni ibya mberee wllh!</p>
-                      </div>
+                    <div className="images">
+                        <img src={require('../images/aboutus.jpg')}></img>
+                        {/* <img src={require('../images/onus.jpg   ')}></img> */}
                     </div>
                 </section>
             </main>
