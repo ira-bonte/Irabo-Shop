@@ -37,7 +37,7 @@ function Home(){
                         <div className="title">
                             <h1>about us</h1>
                        </div>
-                       <p>this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte <a href="home.js">read more...</a></p>
+                       <p>this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte this is iradukunda bonte <a href="home.js">read more...</a></p>
                     </div>
                     <div className="images">
                         <img src={require('../images/aboutus.jpg')}></img>
